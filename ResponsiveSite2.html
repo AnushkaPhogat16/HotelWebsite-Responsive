@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .menu{
+            float: left;
+            width: 20%;
+        }
+        .item{
+            padding: 8px;
+            border-bottom: 2px solid #f1f1f1;
+            margin-top: 7px;
+            cursor:default;
+        }
+        .item:hover{
+            color:rgb(182, 226, 241)
+        }
+        .main{
+            float: left;
+            width: 60%;
+            padding: 0 20px;
+            overflow:hidden
+       }
+        .right{
+            background-color: rgb(182, 226, 241);
+            float: left;
+            width: 20%;
+            padding: 10px 15px;
+            margin-top: 7px;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        a:hover{
+            color: blue;
+        }
+
+        @media only screen and (max-width:800px){
+             /* For tablets: */
+             .main{
+                width: 80%;
+                padding: 0;
+             }
+             .right {
+                width: 100%;
+             }
+        }
+        @media only screen and (max-width:500px){
+            /* For mobile phones: */
+            .menu, .main, .right {
+                width: 100%;
+            }    
+        }
+    </style>
+    <title>Responsive Website</title>
+</head>
+<body style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+   <div style="background-color: #f1f1f1; padding: 15px; ">
+    <h1>Beachside Holiday Resort</h1>
+    <h3>the most idyllic place to live your Goan dreams with Pride!</h3>
+   </div>
+
+   <div style="overflow:auto">
+     <div class="menu">
+         <div class="item">Rooms</div>
+         <div class="item">Transport</div>
+         <div class="item">Tourist Spots</div>
+         <div class="item">Gallery</div>
+     </div>
+
+     <div class="main">
+        <h2>The Accomodation</h2>
+        <p>The splendour of the aesthetically designed rooms at our hotel in Goa is where comfort and style blend together, offering unmatched luxury to our guests. The rooms in our resort exude a regal aura, perfect to relax after a tiresome day. The beautifully designed rooms have been exclusively constructed to offer a fantastic view of the huge azure swimming pool.</p>
+        <img src="qw.jpg" style="width:100%">
+     </div>
+
+     <div class="right">
+        <h2>What?</h2>
+        <P>Stir your cocktail in style as you lounge at the pool side or the verdant lawn area and soothe your senses to your favourite numbers by the Live DJ music that is sure to leave you in awe and splendour!</P>
+        <h2>Where?</h2>
+        <p>The hotel is located just 1.2 kms away from the exciting Baga beach. Additionally, the Saturday night market is just 300 meters from the hotel.</p>
+        <h2>Price?</h2>
+        <p>Go to the 'My Bookings' page for details regarding the prices! </p>
+     </div>
+    </div>
+
+    <div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;">
+        Terms and conditions applied. Refer <a href="www.GoaResorts.com">www.GoaResorts.com</a> for further details.
+    </div>
+</body>
+</html>
